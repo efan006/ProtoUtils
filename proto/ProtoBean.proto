@@ -1,0 +1,89 @@
+option java_package = "com.efan.proto";
+option java_outer_classname = "ProtoBean";
+
+message ArrayProto {
+
+	repeated int32 _intArray = 1;
+
+	repeated int32 _IntArray = 2;
+
+	repeated double _doubleArray = 3;
+
+	repeated double _DoubleArray = 4;
+
+	repeated float _floatArray = 5;
+
+	repeated float _FloatArray = 6;
+
+	repeated int64 _longArray = 7;
+
+	repeated int64 _LongArray = 8;
+
+	repeated bool _booleanArray = 9;
+
+	repeated bool _BooleanArray = 10;
+
+	repeated string _StringArray = 11;
+
+}
+
+message TestProto {
+
+	message ListProto {
+
+		repeated int32 _intList = 1;
+
+		repeated double _doubleList = 2;
+
+		repeated float _floatList = 3;
+
+		repeated int64 _longList = 4;
+
+		repeated bool _booleanList = 5;
+
+		repeated string _stringList = 6;
+
+	}
+
+	enum DAY {
+		MON = 0;
+		TUE = 1;
+		WED = 2;
+		THU = 3;
+		FRI = 4;
+		SAT = 5;
+		SUN = 6;
+	}
+
+	required int32 _int = 1;
+
+	required int32 __Int = 2;
+
+	required double _double = 3;
+
+	required double __Double = 4;
+
+	required float _float = 5;
+
+	required float __Float = 6;
+
+	required int64 _long = 7;
+
+	required int64 __Long = 8;
+
+	required bool _boolean = 9;
+
+	required bool __Boolean = 10;
+
+	required string _String = 11;
+
+	required bytes _bytes = 12;
+
+	required ListProto listProto = 300;
+
+	required ArrayProto arrayProto = 301;
+
+	repeated DAY days = 302;
+
+}
+
