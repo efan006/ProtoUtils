@@ -31,7 +31,7 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * IO工具类
- * Created by wangkw on 2016/9/21.
+ * Created by efan on 2016/9/21.
  */
 public class IOUtils {
 

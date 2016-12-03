@@ -33,8 +33,7 @@ import java.lang.annotation.Target;
 /**
  * A mapped annotation for protobuf
  * 
- * @author xiemalin
- * @since 1.0.0
+ * @author efan
  */
 @Target({ ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
@@ -45,7 +44,7 @@ public @interface Proto {
     /**
      * <pre>
      * Specifying Field Rules to <code>required</code> or <code>optional</code> 
-     * default is false. <code>optional</code>
+     * default is true. <code>required</code>
      * </pre>
      * 
      * @return Specifying Field Rules
@@ -53,7 +52,7 @@ public @interface Proto {
     boolean required() default true;
 
     /**
-     * Set field tag. It starts at 1;
+     * Set field tag. It starts at 0;
      *
      * @return field order.
      */

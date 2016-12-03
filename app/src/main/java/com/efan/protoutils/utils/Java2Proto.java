@@ -41,7 +41,7 @@ import android.support.v4.util.SparseArrayCompat;
  * 不支持default（与proto3一致）
  * 枚举值一定从0开始（与proto3一致）
  *
- * Created by wangkw on 2016/9/28.
+ * Created by efan on 2016/9/28.
  */
 
 public class Java2Proto {
